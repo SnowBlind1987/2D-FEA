@@ -22,5 +22,6 @@ real(prec),intent(out)::jac
 real(prec),parameter::eighth=1.0_prec/8.0_prec
 jac=eighth*(X1*Y2-X1*Y4-X2*Y1+X2*Y4-X3*Y2+X3*Y4+X4*Y1-X4*Y3)
 
+end subroutine calcJacobian
 
 end module
